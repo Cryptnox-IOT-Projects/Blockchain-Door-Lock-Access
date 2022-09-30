@@ -24,12 +24,6 @@ abi = json.loads('[{"anonymous":false,"inputs":[{"indexed":true,"internalType":"
 contract = w3.eth.contract(address=contract_address, abi=abi)
 admin_address = '0x49cd58A52176B03826216BCAabC58c49Bc5655A1'
 
-try:
-    private_key = os.environ['privatekey']
-except Exception as e:
-    print(f'Please export contract\'s private key as environment variable.\n (export privatekey=\'<Insert key here>\')')
-    sys.exit(0)
-
 def address(public_key: str) -> str:
     return keccak(hexstr=("0x" + public_key[2:]))[-20:].hex()
 
