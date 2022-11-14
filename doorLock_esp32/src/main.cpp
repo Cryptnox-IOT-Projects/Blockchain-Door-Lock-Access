@@ -39,9 +39,8 @@
 #include <Connection.h>
 #include <Card.h>
 
-#define MY_ADDRESS "0x1b9aE0Be6d87e79b9Bd5A6FcDc67d92F76F6e0F6"    // Put your wallet address here
-#define ERC20CONTRACT "0xd529A426754A4DBDdAadB428c076B0C733175302" // Put your ERC20 contract address here
-#define TARGETADDRESS "0xc40a80e5d4b272d5cac1a1c8165919aefd9a4f4a" // put your second address here
+#define ERC20CONTRACT "<Contract Address>" // Put your ERC20 contract address here
+#define TARGETADDRESS "<Wallet Address>"   // put your wallet address here
 #define ETHERSCAN_TX "https://goerli.etherscan.io/"
 #define INPUT_BUFFER_LIMIT (128 + 1)
 #define HASH_SIZE 64

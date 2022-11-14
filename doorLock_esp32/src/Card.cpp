@@ -106,12 +106,10 @@ void Card::sendApdu(uint8_t apdu[], uint16_t apduLength, String commandName, boo
 void Card::selectApdu()
 {
 
- 
     success = nfc.inListPassiveTarget();
     if (success)
     {
 
-    
         uint8_t selectApdu[] = {0x00, 0xA4, 0x04, 0x00, 0x07, 0xA0, 0x00, 0x00, 0x10, 0x00, 0x01, 0x12};
         sendApdu(selectApdu, sizeof(selectApdu), "Select", false);
     }
@@ -147,7 +145,6 @@ void Card::getKeysECC(uint8_t *cardCertResponse, uint8_t *cardCert)
     getSessionPublicKey(cardCertResponse, cardCertPublicKey, cardCert);
 
     eccSharedSuccess = uECC_shared_secret(cardCertPublicKey, private1, secret, curve);
-
 }
 
 void Card::getSessionPublicKey(uint8_t *cardCertResponse, uint8_t *cardCertPublicKey, uint8_t *cardCert)
@@ -194,7 +191,6 @@ void Card::aesEncrypt(byte *msg, uint16_t msgLen)
 
     uint8_t res_init[255];
     uint8_t initResLength = sizeof(res_init);
-
 
     success = nfc.inDataExchange(initApdu, sizeof(initApdu), res_init, &initResLength);
 }

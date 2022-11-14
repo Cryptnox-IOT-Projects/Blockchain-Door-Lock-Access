@@ -15,5 +15,5 @@ class Connection
 {
 public:
     void setUpNFC();
-    void setUpWifi();  
+    void setUpWifi();
 };

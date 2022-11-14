@@ -6,10 +6,8 @@
 #include <Contract.h>
 #include <WiFi.h>
 
-// const char *ssid = "V1A7C";
-// const char *password = "00341877";
-const char *ssid = "V9273";
-const char *password = "sithuaung2019";
+const char *ssid = "<Wifi ssid>";
+const char *password = "<Wifi password>";
 int wificounter = 0;
 void Connection::setUpNFC()
 {
