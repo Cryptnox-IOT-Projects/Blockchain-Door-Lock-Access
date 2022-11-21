@@ -12,27 +12,25 @@
 
 
 .header {
-  height: 200px;
+  height: 100px;
   width: 90%;
   margin: auto;
   max-width: 1200px;
   padding: 5px;
   display: flex;
   justify-content: center;
-
   align-items: center;
 
 }
 
 .useractions {
-  height: 150px;
+  height: 100px;
   width: 90%;
   margin: auto;
   max-width: 1200px;
   padding: 5px;
   display: flex;
   justify-content: center;
-
   align-items: center;
 }
 
@@ -51,7 +49,7 @@
 
 .instructions{
   margin-top: 50px;
-  height:150px;
+  /* height:100px; */
   display: flex;
   justify-content: center;
   width: 600px;
@@ -68,4 +66,269 @@
   background-color: #202c37 !important;
   width: 40vw !important;
   height: 450px;
+}
+
+.gap{
+  width: 100px;
+}
+
+.App {
+  overflow: hidden;
+}
+
+.body {
+  display: block;
+  padding-top: 24px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 24px;
+  background: rgba(21, 34, 61, 0.6);
+  backdrop-filter: blur(1px);
+  height: 100vh;
+  color: white;
+  overflow: hidden;
+}
+
+.settings-icon {
+  float: right;
+  margin-top: 14px;
+  margin-right: 2.27px;
+  width: 19.45px;
+  height: 20px;
+}
+
+.search-field input:focus {
+  outline: none;
+}
+
+.search-filter-label {
+  color: #48ACF0;
+}
+
+.header-bot {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-bar {
+  float: right;
+}
+
+.select-list {
+  border-color: white !important;
+}
+
+.search-filter-arrow {
+  width: 10px;
+  height: 5px;
+}
+
+.table-container {
+  margin-top: 32px;
+}
+
+.search-field-input {
+  background-color: transparent;
+  border: none;
+  color: white;
+  width: 301px;
+  height: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.search-field-icon {
+  margin-left: 5px;
+  width: 24px;
+  height: 24px;
+}
+
+.search-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 16px 4px 12px;
+  gap: 11px;
+  background: #0A152B;
+  border-radius: 28px;
+  width: 340px;
+  height: 48px;
+  margin-top: 52px;
+}
+
+.search-filter {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 8px 12px 12px;
+  gap: 8px;
+  border: 1px solid #48ACF0;
+  border-radius: 8px;
+  width: 180px;
+  height: 16px;
+}
+
+.details-row {
+  display: flex;
+}
+
+.details-block {
+  display: block;
+  margin: 0px 18px;
+  padding: 10px 12px;
+}
+
+ .label {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #A9BBDD;
+}
+
+ .value {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+}
+
+Table .table-keystatus {
+  display: flex;
+}
+
+.table-keystatus .keystatus-card {
+  margin-right: -16px;
+}
+
+.keystatus-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+
+
+  width: 40px;
+  height: 26px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  transform: rotate(-8deg);
+}
+
+.in-use {
+  background: radial-gradient(circle at -1% 150%, #00FFC8, #27AAAF);
+}
+
+.blocked {
+  background: radial-gradient(circle at -1% 150%, #DDB7D0, #EE7766);
+}
+
+.in-progress {
+  background: radial-gradient(circle at -1% 150%, #09F5FE, #48ACF0);
+}
+
+.main-label {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 40px;
+  color: #A9BBDD;
+  margin-top: 52px;
+}
+
+.footer {
+  display: block;
+  height: 100%;
+  text-align: right;
+  padding-top: 300px;
+}
+
+.cryptnox-button {
+  padding: 14px 16px !important;
+  gap: 10px !important;
+  background: radial-gradient(circle at -1% 150%, #E76D83, #48ACF0) !important;
+  border-radius: 100px !important;
+  font-family: 'Roboto' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+  color: black !important;
+}
+
+.elip-1 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: -38px;
+  top: -65px;
+  background: #E76D83;
+  border-radius: 50%;
+  filter: blur(75px)
+}
+
+.elip-2 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 126px;
+  top: 345px;
+  border-radius: 50%;
+  background: #34E3E8;
+  filter: blur(75px)
+}
+
+.elip-3 {
+  position: absolute;
+  width: 198px;
+  height: 198px;
+  left: 431px;
+  top: 75px;
+  border-radius: 50%;
+  background: #48ACF0;
+  filter: blur(75px)
+}
+
+.elip-4 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 967px;
+  top: 75px;
+  border-radius: 50%;
+  background: #E76D83;
+  filter: blur(75px)
+}
+
+.elip-5 {
+  position: absolute;
+  width: 198px;
+  height: 198px;
+  left: 769px;
+  top: 525px;
+  border-radius: 50%;
+  background: #48ACF0;
+  filter: blur(75px)
+}
+
+.rent-info{
+  display: flex;
+  justify-content: center;
 }
